@@ -1,0 +1,1 @@
+Allows you toggle elytra activation with a keybind instead of having to unequip it, nice for mods like Elytra Slot
