@@ -57,6 +57,11 @@ description='''${mod_description}'''
 # The coremods config file path is not configurable and is always loaded from META-INF/coremods.json
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+
+[[mixins]]
+config = "elytrakeybind.mixins.json"
+
+
 [[dependencies.${mod_id}]] #optional
     # the modid of the dependency
     modId="neoforge" #mandatory
@@ -84,12 +89,12 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.${mod_id}]]
-modId="caelus"
-type="required"
-versionRange=""
-ordering="BEFORE"
-side="CLIENT"
+# [[dependencies.${mod_id}]]
+# modId="caelus"
+# type="required"
+# versionRange=""
+# ordering="BEFORE"
+# side="CLIENT"
 
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
