@@ -15,12 +15,9 @@ public class KeybindHandler {
 
     private static boolean wasDown = false;
 
-    // This is a MOD BUS event (IModBusEvent) – wired via modEventBus.addListener(...)
     public static void registerBindings(RegisterKeyMappingsEvent event) {
         event.register(TOGGLE_ELYTRA);
     }
-
-    // This is a GAMEPLAY event – wired via NeoForge.EVENT_BUS.addListener(...)
 
     public static void onClientTick(ClientTickEvent.Post event) {
         boolean isDown = TOGGLE_ELYTRA.isDown();
